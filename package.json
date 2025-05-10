@@ -1,0 +1,40 @@
+{
+  "name": "05.05.2025---calculadora",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.schwarz.calc",
+    "productName": "Calculadora",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "output": "build"
+    },
+    
+    "win": {
+      "target": "nsis",
+      "icon": "img/favicon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "keywords": [],
+  "author": "Vicente Schwarz",
+  "license": "ISC",
+  "description": "A simple calculator app built with Electron.",
+  "devDependencies": {
+    "electron-builder": "^26.0.12",
+    "electron-reload": "^2.0.0-alpha.1"
+  },
+  "dependencies": {
+    
+  }
+}
